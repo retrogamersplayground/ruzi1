@@ -77,14 +77,18 @@ a:visited {color: #212121; text-decoration: none; }
   <hr>
 <?php include_once("pizzaHutLibertyKy.php");?>
 
-    
- 
-
- <br>
+  </br>
+  <hr>
+ <h2>Partners in Stanford Kentucky</h2>
+<?php include_once("bluebirdStanfordKy.php");?>
+ </br>
  <hr>
- 
- 
-
+ <?php include_once("kentuckyDepotStanfordKy.php");?>
+ </br>
+ </hr>
+ <?php include_once("chinaBuffetStanfordKy.php");?>
+ </br>
+ </hr>
 
 After calling to order your food please complete this form to request delivery!
 <br>
