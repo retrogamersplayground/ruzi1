@@ -92,13 +92,18 @@ a:visited {color: #212121; text-decoration: none; }
 
 Ruzi is Azerbaijani for sustenance and sustenance is a quintessential for growth and development.  We at Ruzi believe that sustenance is more than just an individual experience, we believe in connecting people with food, regardless of where you live.  From small, rural towns to major metropolises, we want to bring your sustenance to your doorstep.  Above all, our goal is to take the distance out of dining and to get people and families back to spending their time how they want, without having to trade limited cuisine choices.
 <hr>
+<section class="accent-color">
 <h1>How it works</h1>
-<h3>Select from our partners by clicking the Partners button or by clicking restuarant partners on the navigation bar.</h3><br><hr>
-<h3>Visit the partner's webpage to see their menu.</h3><br><hr>
-<h3>Call and place your order. Pay over the phone.</h3><hr>
-<h3>Complete the delivery request form to request delivery. Enter the name on the order, the address you want your order delivered to, your email, and your mobile phone information.</h3>
-<h3>You will receive a text message with a link to complete payment of the delivery change using PayPal for security.</h3>
-<h3>Once payment is confirmed you are finished. Our driver will message you with an estimate arrival time once he picks up your order!</h3>
+<hr>
+<ul>
+<li></li><h3>Select from our partners by clicking the partner's button or by clicking restuarant partners on the navigation bar.</h3></li></br><hr>
+<li></li><h3>Visit the partner's webpage to see their menu.</h3></li></br><hr>
+<li></li><h3>Call and place your order. Pay over the phone.</h3></li></br><hr>
+<li></li><h3>Complete the delivery request form to request delivery. Enter the name on the order, the address you want your order delivered to, your email, and your mobile phone information.</h3></li><ber></br><hr>
+<li></li><h3>Click the paypal payment button to complete payment for delivery.</h3></li></br><hr>
+<li></li><h3>Once payment is confirmed you are finished. Our driver will message you with an estimate arrival time once he picks up your order!</h3></li></br><hr>
+</ul>
+</section>
   <div class="container-fluid divider-color"></br>
    <h1 class="text-primary-color"> Restaurant Partners</h1>
   <hr> <a href="/partners2.php"><img src="https://s5.postimg.org/lubix04xz/IMG_0682.jpg" class="thick-gray-border smaller-image"></img></a>
