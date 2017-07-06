@@ -105,15 +105,16 @@ Ruzi is Azerbaijani for sustenance and sustenance is a quintessential for growth
 </ul>
 </section>
   <div class="container-fluid divider-color"></br>
-   <h1 class="text-primary-color"> Restaurant Partners</h1>
-  <hr> <a href="/partners2.php"><img src="https://s5.postimg.org/lubix04xz/IMG_0682.jpg" class="thick-gray-border smaller-image"></img></a>
+   <h1 class="text-primary-color"> Restaurant Partners</h1></br><hr>
+   <h1 class="text-primary-color">Click the image to visit our restaurant partners listing.</h1> </br>
+  <a href="/partners2.php"><img src="https://s5.postimg.org/lubix04xz/IMG_0682.jpg" class="thick-gray-border smaller-image"></img></a>
    
  
 
 <hr>
-<h1>If you have all ready called to place your order click the button to request delivery and pay the delivery fee. </hr>
+<h1 class="text-primary-color">If you have all ready called to place your order click the button to request delivery and pay the delivery fee.</h1> </br>
 <center>
-<a href="/order_now.php"><img src="https://s5.postimg.org/8ow0qwb2f/IMG_0681.jpg" class="thick-gray-border smaller-image"> </img></a>
+<a href="/order_now.php"><img src="https://s5.postimg.org/8ow0qwb2f/IMG_0681.jpg" class="thick-gray-border smaller-image"> </img></a></br></br></br>
 </center>
 </div>
 </br>
