@@ -3,7 +3,7 @@
 require_once('includes/config.php');
 
 //check if already logged in move to home page
-if( $user->is_logged_in() ){ header('Location: index.php'); } 
+if( $user->is_logged_in() ){ header('Location: memberpage.php'); } 
 
 //process login form if submitted
 if(isset($_POST['submit'])){
@@ -28,65 +28,7 @@ $title = 'Login';
 //include header template
 require('layout/header.php'); 
 ?>
-<html lang="eng">
-<head>
-  
-    <meta charset="uft-8">
-  
-  
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/stylesheet.css">                                                                                                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>                                                                                                  
-  
-  
-  
-  
-<style>
-
-
-  a:link {color: #212121; text-decoration: none; }
-a:visited {color: #212121; text-decoration: none; }
-    a:hover {color: #5dfc0a; text-decoration: none; }
-
-    
-   </style>
- </head>
-  
-
-    
-
-  
-
-
-
- <div class="container-fluid background-color text-center">
-<div class="container-fluid divider-color text-primary-color">
-  
-
-
-      
-        
-
-    
-    
-    
-       
-    </div>  
-    
- <body> 
-
-  <div class="container-fluid inline-block primary-color text-primary-color"> 
-   <header>
-     </br>  
-     
-     <h1>  Ruzi</h1>
-   <img  src=" https://s5.postimg.org/d14ug9vd3/Ruzi.png  "></br></img>
-   <h2>Taking the Distance Out of Dining</h2>
-   </header>
-   </div>
-<div class="fluid-container" id="about"></br>
 	
 <div class="container">
 
@@ -95,7 +37,7 @@ a:visited {color: #212121; text-decoration: none; }
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			<form role="form" method="post" action="" autocomplete="off">
 				<h2>Please Login</h2>
-				<p><a href='./'>Back to home page</a></p>
+				
 				<hr>
 
 				<?php
@@ -151,11 +93,23 @@ a:visited {color: #212121; text-decoration: none; }
 
 
 </div>
-</br>
-</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php 
 //include header template
 require('layout/footer.php'); 
 ?>
-
-</html>

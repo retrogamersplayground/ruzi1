@@ -1,0 +1,41 @@
+[23-Sep-2017 01:53:12 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/admin/display_vendor2.php on line 66
+[23-Sep-2017 01:53:12 Europe/London] PHP Stack trace:
+[23-Sep-2017 01:53:12 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/admin/memberpage.php:0
+[23-Sep-2017 01:53:12 Europe/London] PHP   2. include_once() /home/ubuntu/workspace/admin/memberpage.php:203
+[23-Sep-2017 01:53:12 Europe/London] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/admin/display_vendor2.php:66
+[23-Sep-2017 01:54:41 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/admin/display_vendor2.php on line 66
+[23-Sep-2017 01:54:41 Europe/London] PHP Stack trace:
+[23-Sep-2017 01:54:41 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/admin/memberpage.php:0
+[23-Sep-2017 01:54:41 Europe/London] PHP   2. include_once() /home/ubuntu/workspace/admin/memberpage.php:203
+[23-Sep-2017 01:54:41 Europe/London] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/admin/display_vendor2.php:66
+[23-Sep-2017 01:42:19 UTC] PHP Warning:  require_once(admin/includes/config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/login.php on line 3
+[23-Sep-2017 01:42:19 UTC] PHP Stack trace:
+[23-Sep-2017 01:42:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[23-Sep-2017 01:42:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'admin/includes/config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/login.php on line 3
+[23-Sep-2017 01:42:19 UTC] PHP Stack trace:
+[23-Sep-2017 01:42:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[22-Sep-2017 21:48:48 America/New_York] PHP Warning:  include(admin/classes/user.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/config.php on line 31
+[22-Sep-2017 21:48:48 America/New_York] PHP Stack trace:
+[22-Sep-2017 21:48:48 America/New_York] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[22-Sep-2017 21:48:48 America/New_York] PHP   2. require_once() /home/ubuntu/workspace/admin/login.php:3
+[22-Sep-2017 21:48:48 America/New_York] PHP Warning:  include(): Failed opening 'admin/classes/user.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/config.php on line 31
+[22-Sep-2017 21:48:48 America/New_York] PHP Stack trace:
+[22-Sep-2017 21:48:48 America/New_York] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[22-Sep-2017 21:48:48 America/New_York] PHP   2. require_once() /home/ubuntu/workspace/admin/login.php:3
+[22-Sep-2017 21:48:48 America/New_York] PHP Warning:  include(admin/classes/phpmailer/mail.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/config.php on line 32
+[22-Sep-2017 21:48:48 America/New_York] PHP Stack trace:
+[22-Sep-2017 21:48:48 America/New_York] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[22-Sep-2017 21:48:48 America/New_York] PHP   2. require_once() /home/ubuntu/workspace/admin/login.php:3
+[22-Sep-2017 21:48:48 America/New_York] PHP Warning:  include(): Failed opening 'admin/classes/phpmailer/mail.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/config.php on line 32
+[22-Sep-2017 21:48:48 America/New_York] PHP Stack trace:
+[22-Sep-2017 21:48:48 America/New_York] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[22-Sep-2017 21:48:48 America/New_York] PHP   2. require_once() /home/ubuntu/workspace/admin/login.php:3
+[22-Sep-2017 21:48:48 America/New_York] PHP Fatal error:  Class 'User' not found in /home/ubuntu/workspace/admin/includes/config.php on line 33
+[22-Sep-2017 21:48:48 America/New_York] PHP Stack trace:
+[22-Sep-2017 21:48:48 America/New_York] PHP   1. {main}() /home/ubuntu/workspace/admin/login.php:0
+[22-Sep-2017 21:48:48 America/New_York] PHP   2. require_once() /home/ubuntu/workspace/admin/login.php:3
+[22-Sep-2017 21:59:03 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/admin/display_vendor2.php on line 66
+[22-Sep-2017 21:59:03 America/New_York] PHP Stack trace:
+[22-Sep-2017 21:59:03 America/New_York] PHP   1. {main}() /home/ubuntu/workspace/admin/memberpage.php:0
+[22-Sep-2017 21:59:03 America/New_York] PHP   2. include_once() /home/ubuntu/workspace/admin/memberpage.php:203
+[22-Sep-2017 21:59:03 America/New_York] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/admin/display_vendor2.php:66

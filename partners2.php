@@ -1,3 +1,7 @@
+<?php include_once("admin/mysqli_connection.php");?>
+
+
+
 <html lang="eng">
 <head>
   
@@ -75,7 +79,45 @@ a:visited {color: #212121; text-decoration: none; }
 
 <?php include_once("sweetBeansLibertyKy.php");?>
   <hr>
-<?php include_once("pizzaHutLibertyKy.php");?>
+
+
+
+<div class="container">
+<?php
+$res=mysqli_query($link, "SELECT * FROM vendor WHERE city = 'Liberty'");
+while($row=mysqli_fetch_array($res))
+
+{
+?>
+ 
+
+
+
+  <div class="box">
+
+
+<a href="<?php echo $row["link"]; ?>" target="_blank"><img src="<?php echo $row["picture"]; ?>" alt="" /></a></br>
+
+Link:<?php echo $row["link"];?></br>
+
+Street:<?php echo $row["street"];?></br>
+City:<?php echo $row["city"];?></br>
+Phone:<?php echo $row["phone"];?></br>
+Phone Order:<?php echo $row["porder"];?></br>
+Online Order:<?php echo $row["oorder"];?></br>
+
+
+
+  </div> <!--box-->       
+
+<?php
+}
+
+?>
+
+</div>
+
+
 
   </br>
   <hr>
@@ -89,9 +131,138 @@ a:visited {color: #212121; text-decoration: none; }
  <?php include_once("chinaBuffetStanfordKy.php");?>
  </br>
  </hr>
+ 
+ 
+ 
+<div class="container">
+<?php
+$res=mysqli_query($link, "SELECT * FROM vendor WHERE city = 'Stanford'");
+while($row=mysqli_fetch_array($res))
 
+{
+?>
+ 
+
+
+
+  <div class="box">
+
+
+<a href="<?php echo $row["link"]; ?>" target="_blank"><img src="<?php echo $row["picture"]; ?>" alt="" /></a></br>
+
+Link:<?php echo $row["link"];?></br>
+
+Street:<?php echo $row["street"];?></br>
+City:<?php echo $row["city"];?></br>
+Phone:<?php echo $row["phone"];?></br>
+Phone Order:<?php echo $row["porder"];?></br>
+Online Order:<?php echo $row["oorder"];?></br>
+
+
+
+  </div> <!--box-->       
+
+<?php
+}
+
+?>
+
+</div>
+ 
+ 
+ 
+ 
+ 
+<h2>Partners in Danville Kentucky</h2>
+</br>
+</br>
+
+
+
+
+
+
+
+
+<div class="container">
+<?php
+$res=mysqli_query($link, "SELECT * FROM vendor WHERE city = 'Danville'");
+while($row=mysqli_fetch_array($res))
+
+{
+?>
+ 
+
+
+
+  <div class="box">
+
+
+<a href="<?php echo $row["link"]; ?>" target="_blank"><img src="<?php echo $row["picture"]; ?>" alt="" /></a></br>
+
+Link:<?php echo $row["link"];?></br>
+
+Street:<?php echo $row["street"];?></br>
+City:<?php echo $row["city"];?></br>
+Phone:<?php echo $row["phone"];?></br>
+Phone Order:<?php echo $row["porder"];?></br>
+Online Order:<?php echo $row["oorder"];?></br>
+
+
+
+  </div> <!--box-->       
+
+<?php
+}
+
+?>
+
+</div>
+</br>
+<h2>Partners in Richmond</h2>
+
+
+<div class="container">
+<?php
+$res=mysqli_query($link, "SELECT * FROM vendor WHERE city = 'Richmond'");
+while($row=mysqli_fetch_array($res))
+
+{
+?>
+ 
+
+
+
+  <div class="box">
+
+
+<a href="<?php echo $row["link"]; ?>" target="_blank"><img src="<?php echo $row["picture"]; ?>" alt="" /></a></br>
+
+Link:<?php echo $row["link"];?></br>
+
+Street:<?php echo $row["street"];?></br>
+City:<?php echo $row["city"];?></br>
+Phone:<?php echo $row["phone"];?></br>
+Phone Order:<?php echo $row["porder"];?></br>
+Online Order:<?php echo $row["oorder"];?></br>
+
+
+
+  </div> <!--box-->       
+
+<?php
+}
+
+?>
+
+</div>
+
+
+
+<hr>
+</br>
 After calling to order your food please complete this form to request delivery!
-<br>
+</br>
 <hr>
 <?php include_once("order2.php");?>
 </div>

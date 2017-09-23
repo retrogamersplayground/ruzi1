@@ -1,7 +1,32 @@
-<?php require('includes/config.php');
+<?php require('includes/config.php'); 
 
-//if logged in redirect to members page
-if( $user->is_logged_in() ){ header('Location: memberpage.php'); }
+//if not logged in redirect to login page
+if(!$user->is_logged_in()){ header('Location: login.php'); } 
+
+//define page title
+$title = 'Members Page';
+
+//include header template
+require('layout/header.php'); 
+?>
+
+<div class="container">
+
+	<div class="row">
+
+	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+			
+				<h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
+				<p><a href='logout.php'>Logout</a></p>
+				<hr>
+
+		</div>
+	</div>
+
+
+</div>
+
+<?php
 
 //if form has been submitted process it
 if(isset($_POST['submit'])){
@@ -10,7 +35,7 @@ if(isset($_POST['submit'])){
 	if(strlen($_POST['username']) < 3){
 		$error[] = 'Username is too short.';
 	} else {
-		$stmt = $db->prepare('SELECT username FROM members WHERE username = :username');
+		$stmt = $db->prepare('SELECT username FROM admins WHERE username = :username');
 		$stmt->execute(array(':username' => $_POST['username']));
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -36,7 +61,7 @@ if(isset($_POST['submit'])){
 	if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 	    $error[] = 'Please enter a valid email address';
 	} else {
-		$stmt = $db->prepare('SELECT email FROM members WHERE email = :email');
+		$stmt = $db->prepare('SELECT email FROM admins WHERE email = :email');
 		$stmt->execute(array(':email' => $_POST['email']));
 		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -59,7 +84,7 @@ if(isset($_POST['submit'])){
 		try {
 
 			//insert into database with a prepared statement
-			$stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
+			$stmt = $db->prepare('INSERT INTO admins (username,password,email,active) VALUES (:username, :password, :email, :active)');
 			$stmt->execute(array(
 				':username' => $_POST['username'],
 				':password' => $hashedpassword,
@@ -71,7 +96,7 @@ if(isset($_POST['submit'])){
 			//send email
 			$to = $_POST['email'];
 			$subject = "Registration Confirmation";
-			$body = "<p>Thank you for registering for Ruzi.</p>
+			$body = "<p>Thank you for registering at demo site.</p>
 			<p>To activate your account, please click on this link: <a href='".DIR."activate.php?x=$id&y=$activasion'>".DIR."activate.php?x=$id&y=$activasion</a></p>
 			<p>Regards Site Admin</p>";
 
@@ -83,7 +108,7 @@ if(isset($_POST['submit'])){
 			$mail->send();
 
 			//redirect to index page
-			header('Location: index.php?action=joined');
+			header('Location: memberpage.php?action=joined');
 			exit;
 
 		//else catch the exception and show the error.
@@ -96,79 +121,21 @@ if(isset($_POST['submit'])){
 }
 
 //define page title
-$title = 'Ruzi Delivery';
+$title = 'Demo';
 
 //include header template
 require('layout/header.php');
 ?>
 
-<html lang="eng">
-<head>
-  
-    <meta charset="uft-8">
-  
-  
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/stylesheet.css">                                                                                                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>                                                                                                  
-  
-  
-  
-  
-<style>
-
-
-  a:link {color: #212121; text-decoration: none; }
-a:visited {color: #212121; text-decoration: none; }
-    a:hover {color: #5dfc0a; text-decoration: none; }
-
-    
-   </style>
- </head>
-  
-
-    
-
-  
-
-
-
- <div class="container-fluid background-color text-center">
-<div class="container-fluid divider-color text-primary-color">
-  
-
-
-      
-        
-
-    
-    
-    
-       
-    </div>  
-    
- <body> 
-
-  <div class="container-fluid inline-block primary-color text-primary-color"> 
-   <header>
-     </br>  
-     
-     <h1>  Ruzi</h1>
-   <img src="https://s5.postimg.org/d14ug9vd3/Ruzi.png "></br></img>
-   <h2>Taking the Distance Out of Dining</h2>
-   </header>
-   </div>
-<div class="fluid-container" id="about"></br>
 <div class="container">
 
 	<div class="row">
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			<form role="form" method="post" action="" autocomplete="off">
-				<h2>Please Sign Up</h2>
-				<p>Already a member? <a href='login.php'>Login</a></p>
+				<h2>Add New Admin</h2>
+				
 				<hr>
 
 				<?php
@@ -212,10 +179,25 @@ a:visited {color: #212121; text-decoration: none; }
 	</div>
 
 </div>
-</br>
-</br>
-</html>
+
 <?php
 //include header template
 require('layout/footer.php');
 ?>
+
+
+
+<?php 
+//include header template
+require('layout/footer.php'); 
+?>
+
+<hr>
+</br>
+
+
+<?php include_once("add_vendor.php");?>
+</br>
+<hr>
+</br>
+<?php include_once("display_vendor2.php");?>

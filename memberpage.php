@@ -35,7 +35,7 @@ require('layout/header.php');
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
    <link rel="stylesheet" href="/stylesheet.css">                                                                                                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>                                                                                                  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>                                                                                                  
   
   
   
@@ -79,7 +79,7 @@ a:visited {color: #212121; text-decoration: none; }
      </br>  
      
      <h1>  Ruzi</h1>
-   <img class="largest-image thick-gray-border" src=" https://s5.postimg.org/4fmpazifb/IMG_0674.jpg  "></br></img>
+   <img src=" https://s5.postimg.org/d14ug9vd3/Ruzi.png  "></br></img>
    <h2>Taking the Distance Out of Dining</h2>
    </header>
    </div>
