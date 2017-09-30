@@ -27,7 +27,7 @@
 
     
 
-    .largest-image {
+.largest-image {
       width: 75%;}
 
 .smallest-image {
@@ -147,4 +147,32 @@ border-color: #5dfc0a;
 border-width: 2px;
 border-style:solid;
  
+}
+
+
+#my_form {
+  background:#0276fd;
+  padding:25px;
+  border: 5px solid #5dfc0a;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+input {
+  width:80%;
+  height:30px;
+  border:4px solid #5dfc0a;
+  border-radius:4px;
+  margin-top:20px;
+  text-align:center;
+}
+
+textarea {
+  width:80%;
+  height:100px;
+  border:4px solid #5dfc0a;
+  border-radius:4px;
+  margin-top:20px;
+  text-align:center;
 }

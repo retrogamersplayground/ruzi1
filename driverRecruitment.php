@@ -50,8 +50,7 @@ a:visited {color: #212121; text-decoration: none; }
    <header>
      </br>  
      
-     <h1>  Ruzi</h1>
-   <img class="largest-image thick-gray-border" src=" https://s5.postimg.org/4fmpazifb/IMG_0674.jpg  "></br></img>
+     <img src=" https://s5.postimg.org/d14ug9vd3/Ruzi.png" class="largest-image"></br></img>
    <h2>Taking the Distance Out of Dining</h2>
    </header>
    </div>

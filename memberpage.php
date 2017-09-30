@@ -10,13 +10,15 @@ $title = 'Members Page';
 require('layout/header.php'); 
 ?>
 
+<?php include_once("template_navigation.php");?>
+
 <div class="container">
 
 	<div class="row">
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
-				<h2>Welcome to Ruzi <?php echo $_SESSION['username']; ?></h2>
+				<h2>Welcome to Ruzi Delivery <?php echo $_SESSION['username']; ?></h2>
 				<p><a href='logout.php'>Logout</a></p>
 				<hr>
 
@@ -53,7 +55,7 @@ a:visited {color: #212121; text-decoration: none; }
   
 
     
-<?php include_once("template_navigation.php");?>
+
   
 
 
@@ -78,8 +80,8 @@ a:visited {color: #212121; text-decoration: none; }
    <header>
      </br>  
      
-     <h1>  Ruzi</h1>
-   <img src=" https://s5.postimg.org/d14ug9vd3/Ruzi.png  "></br></img>
+     
+   <img src=" https://s5.postimg.org/d14ug9vd3/Ruzi.png" class="largest-image"></br></img>
    <h2>Taking the Distance Out of Dining</h2>
    </header>
    </div>

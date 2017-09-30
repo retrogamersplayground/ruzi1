@@ -51,16 +51,15 @@
    <header>
      </br>  
      
-     <h1>  Ruzi</h1>
-   <img class="largest-image thick-gray-border" src=" https://s5.postimg.org/4fmpazifb/IMG_0674.jpg  "></br></img>
-    <h2>Taking the Distance Out of Delivery</h2></br>
+     <img src=" https://s5.postimg.org/d14ug9vd3/Ruzi.png" class="largest-image"></br></img>
+   <h2>Taking the Distance Out of Dining</h2>
    </header>
    </div>
 
 
 </br>
 <form id="my_form" onsubmit="submitForm(); return false;">
-  <p><input id="n" placeholder="Name" required></p>
+  <input id="n" placeholder="Name" required>
   <p><input id="e" placeholder="Email Address" type="email" required></p>
   <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
   <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
