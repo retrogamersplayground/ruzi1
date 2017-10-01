@@ -23,7 +23,7 @@ if(isset($_POST["action"]))
   $statement->execute(
    array(
     'last_activity'  => date("Y-m-d H:i:s", STRTOTIME(date('h:i:sa'))),
-    'login_details_id' => $_SESSION["login_id"]
+    'login_details_id' => $_SESSION['admin']["login_id"]
    )
   );
  }

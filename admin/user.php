@@ -29,9 +29,9 @@ class User extends Password{
 
 		if($this->password_verify($password,$row['password']) == 1){
 
-		    $_SESSION['loggedin'] = true;
-		    $_SESSION['username'] = $row['username'];
-		    $_SESSION['memberID'] = $row['memberID'];
+		    $_SESSION['admin']['loggedin'] = true;
+		    $_SESSION['admin']['username'] = $row['username'];
+		    $_SESSION['admin']['memberID'] = $row['memberID'];
 		    return true;
 		}
 	}
@@ -41,7 +41,7 @@ class User extends Password{
 	}
 
 	public function is_logged_in(){
-		if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+		if(isset($_SESSION['admin']['loggedin']) && $_SESSION['admin']['loggedin'] == true){
 			return true;
 		}
 	}
