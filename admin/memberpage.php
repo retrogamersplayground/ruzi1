@@ -24,7 +24,7 @@ require('layout/header.php');
 
 	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 			
-				<h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
+				<h2>Member only page - Welcome <?php echo $_SESSION['admin']['username']; ?></h2>
 				<p><a href='logout.php'>Logout</a></p>
 				<hr>
 
@@ -224,7 +224,7 @@ session_start();
 <?php
 
 
-if(!isset($_SESSION["type"]))
+if(!isset($_SESSION['admin']["type"]))
 {
  header("location: login.php");
 }
@@ -247,7 +247,7 @@ if(!isset($_SESSION["type"]))
    <br />
    <?php
    
-   if($_SESSION["type"] =="user")
+   if($_SESSION['admin']["type"] =="user")
    {
     echo '<div align="center"><h2>Hi... Welcome to Ruzi Drivers Page! </h2></div>'; 
    
@@ -271,7 +271,7 @@ if(!isset($_SESSION["type"]))
 <script>
 $(document).ready(function(){
 <?php
-if($_SESSION["type"] == "user")
+if($_SESSION['admin']["type"] == "user")
 {
 ?>
 function update_user_activity()
